@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hiper dev official website</title>
-  </head>
-  <body>
-     <h1 align=center>Hello world!</h1>
-    <form action="welcome.php" method="POST">
-     <label for="name">Name: </label>
-     <input id="name" type="text"><br>
-     <label for="email">Email: </label>
-     <input id="email" type="text"><br>
-      <input type="submit" value="Submit">
-    </form>
-  </body>
+<head>
+  <title>My Form</title>
+</head>
+<body>
+  <form id="myForm">
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="result"></div>
+  <script>
+    const form = document.getElementById('myForm');
+    const resultDiv = document.getElementById('result');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(form);
+
+      const response = await fetch('/submit.php', {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await response.json();
+      resultDiv.textContent = `Hello, ${data.name}!`;
+    });
+  </script>
+</body>
 </html>
