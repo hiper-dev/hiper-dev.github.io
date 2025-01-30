@@ -7,67 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>HiPER DEV</h1>
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>John Doe</h1>
             <p>Game Developer | 3D Artist | Indie Creator</p>
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <a href="#projects" class="btn">View Projects</a>
         </div>
-    </header>
+    </div>
 
-    <section id="about">
-        <div class="container">
-            <img src="assets/profile.jpg" alt="Profile Image">
-            <h2>About Me</h2>
-            <p>Passionate game developer with experience in 3D modeling, programming, and game design.</p>
+    <section id="about" class="glass">
+        <img src="assets/profile.jpg" alt="Profile">
+        <h2>About Me</h2>
+        <p>Passionate about building immersive gaming experiences, from coding mechanics to designing stunning environments.</p>
+    </section>
+
+    <section id="projects" class="glass">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="assets/project1.jpg" alt="Project 1">
+            <h3>Project Name</h3>
+            <p>Short description of the project.</p>
+        </div>
+        <div class="project">
+            <img src="assets/project2.jpg" alt="Project 2">
+            <h3>Project Name</h3>
+            <p>Short description of the project.</p>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <img src="assets/project1.jpg" alt="Project 1">
-                <h3>Project Title</h3>
-                <p>Description of the project.</p>
-            </div>
-            <div class="project">
-                <img src="assets/project2.jpg" alt="Project 2">
-                <h3>Project Title</h3>
-                <p>Description of the project.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Game Development</li>
-                <li>3D Modeling</li>
-                <li>Programming (C++, C#, JavaScript)</li>
-                <li>Physics and AI Systems</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: johndoe@email.com</p>
-            <p>LinkedIn: linkedin.com/in/johndoe</p>
-            <p>GitHub: github.com/johndoe</p>
-        </div>
+    <section id="contact" class="glass">
+        <h2>Contact</h2>
+        <p>Email: johndoe@email.com</p>
+        <p>GitHub: <a href="https://github.com/johndoe">github.com/johndoe</a></p>
     </section>
 
     <footer>
-        <p>© 2025 HiPER DEV. All Rights Reserved.</p>
+        <p>© 2025 John Doe. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
