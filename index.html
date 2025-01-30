@@ -1,33 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form id="myForm">
-    <label for="name">Enter your name:</label>
-    <input type="text" id="name" name="name" required>
-    <button type="submit">Submit</button>
-  </form>
+    <header>
+        <div class="container">
+            <h1>John Doe</h1>
+            <p>Game Developer | 3D Artist | Indie Creator</p>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <div id="result"></div>
-  <script>
-    const form = document.getElementById('myForm');
-    const resultDiv = document.getElementById('result');
+    <section id="about">
+        <div class="container">
+            <img src="assets/profile.jpg" alt="Profile Image">
+            <h2>About Me</h2>
+            <p>Passionate game developer with experience in 3D modeling, programming, and game design.</p>
+        </div>
+    </section>
 
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="assets/project1.jpg" alt="Project 1">
+                <h3>Project Title</h3>
+                <p>Description of the project.</p>
+            </div>
+            <div class="project">
+                <img src="assets/project2.jpg" alt="Project 2">
+                <h3>Project Title</h3>
+                <p>Description of the project.</p>
+            </div>
+        </div>
+    </section>
 
-      const formData = new FormData(form);
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Game Development</li>
+                <li>3D Modeling</li>
+                <li>Programming (C++, C#, JavaScript)</li>
+                <li>Physics and AI Systems</li>
+            </ul>
+        </div>
+    </section>
 
-      const response = await fetch('/submit.php', {
-        method: 'POST',
-        body: formData
-      });
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: johndoe@email.com</p>
+            <p>LinkedIn: linkedin.com/in/johndoe</p>
+            <p>GitHub: github.com/johndoe</p>
+        </div>
+    </section>
 
-      const data = await response.json();
-      resultDiv.textContent = `Hello, ${data.name}!`;
-    });
-  </script>
+    <footer>
+        <p>© 2025 John Doe. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
