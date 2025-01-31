@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -20,6 +20,7 @@ header {
     padding: 20px 40px;
     backdrop-filter: blur(10px);
     background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
 }
 
 .logo {
@@ -53,6 +54,16 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
+}
+
+#heroVideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
 }
 
 .hero-overlay {
@@ -98,6 +109,16 @@ nav ul li a:hover {
     text-align: center;
 }
 
+/* Glassmorphism Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 40px;
+    width: 60%;
+    margin: auto;
+}
+
 /* Project Section */
 .project-grid {
     display: flex;
@@ -110,6 +131,11 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 8px;
     width: 300px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
 }
 
 .project img {
