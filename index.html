@@ -5,47 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="hero">
-        <div class="overlay"></div>
-        <div class="content">
-            <h1>HiPER DEV</h1>
-            <p>Game Developer | 3D Artist | Indie Creator</p>
-            <a href="#projects" class="btn">View Projects</a>
-        </div>
-    </div>
+    <header>
+        <h1 class="logo">YourName</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="about" class="glass">
-        <img src="assets/profile.jpg" alt="Profile">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Creating Immersive Game Worlds</h1>
+            <p>Game Developer | Programmer | Innovator</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content">
         <h2>About Me</h2>
-        <p>Passionate about building immersive gaming experiences, from coding mechanics to designing stunning environments.</p>
+        <p>A passionate game developer bringing ideas to life with code and creativity.</p>
     </section>
 
-    <section id="projects" class="glass">
+    <!-- Projects Section -->
+    <section id="projects" class="content">
         <h2>Projects</h2>
-        <div class="project">
-            <img src="assets/project1.jpg" alt="Project 1">
-            <h3>Project Name</h3>
-            <p>Short description of the project.</p>
-        </div>
-        <div class="project">
-            <img src="assets/project2.jpg" alt="Project 2">
-            <h3>Project Name</h3>
-            <p>Short description of the project.</p>
+        <div class="project-grid">
+            <div class="project">
+                <img src="assets/project1.jpg" alt="Project 1">
+                <h3>Pavement Kings</h3>
+                <p>Pavement Kings is a high-speed, skill-driven racing game that blends realistic driving mechanics with an open-world experience. Featuring a diverse lineup of cars, handcrafted urban and scenic tracks, and intense racing challenges, the game delivers an immersive journey for true driving enthusiasts. Whether you’re competing in dynamic events, mastering tight corners, or exploring hidden shortcuts, Pavement Kings offers a thrilling balance between realism and excitement. Dominate the streets, prove your skills, and become the ultimate king of the pavement.</p>
+            </div>
+            <!--<div class="project">
+                <img src="assets/project2.jpg" alt="Project 2">
+                <h3>Project Name</h3>
+                <p>Short description of the project.</p>
+            </div>-->
         </div>
     </section>
 
-    <section id="contact" class="glass">
+    <!-- Contact Section -->
+    <section id="contact" class="content">
         <h2>Contact</h2>
-        <p>Email: johndoe@email.com</p>
-        <p>GitHub: <a href="https://github.com/johndoe">github.com/johndoe</a></p>
+        <p>Email: superxyzdeveloper@gmail.com</p>
     </section>
 
     <footer>
         <p>© 2025 HiPER DEV. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
