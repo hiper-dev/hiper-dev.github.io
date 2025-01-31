@@ -5,4 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".project").forEach((project, i) => {
         gsap.from(project, { opacity: 0, x: -50, duration: 1, delay: i * 0.3 });
     });
+
+    gsap.from(".glass-card", { opacity: 0, y: 50, duration: 1.2, stagger: 0.4 });
 });
